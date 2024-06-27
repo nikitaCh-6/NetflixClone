@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="style_main.css">
+</head>
+
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="myVideo">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="content">
+            <img src="title2.png" alt="movie title image" class="title-img">
+            <p>This animation tells the story of Po the Panda, who has to prepare for a family feast for the winter festival. However, he finds out he has to also prepare for a feast for masters as it is the responsibility as the Dragon Warrior. He tries hard to balance his familial duty and his duty as the Dragon Warrior.</p>
+
+            <div class="buttons">
+                <button class="btn play">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play" viewBox="0 0 16 16">
+                        <path d="M10.804 8 5 4.633v6.734zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696z"/>
+                      </svg>
+
+                    Play
+                </button>
+
+                <button class="btn more-info">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                    </svg>
+                    More Info
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!---------------------- Nav bar div -------------------------->
+    <div class="navbar">
+
+        <!-- ----------------------Left alignment in nav bar ---------------------- -->
+        <div class="left-nav">
+            <!-- ----------------------NAV BAR LOGO ---------------------- -->
+            <a href="/browse" class="logo">
+                <img src="Logonetflix.png" alt="Netflix Logo">
+            </a>
+
+            <!-- ----------------------NAV BAR MENU ---------------------- -->
+            <ul class="navigation">
+                <li><a href="/browse">Home</a></li>
+                <li><a href="/browse/genre/83">TV Shows</a></li>
+                <li><a href="/browse/genre/34399">Movies</a></li>
+                <li><a href="/latest">New & Popular</a></li>
+                <li><a href="/browse/my-list">My List</a></li>
+                <li><a href="/browse/original-audio">Browse by Language</a></li>
+            </ul>
+        </div>
+
+        <!-- ----------------------RIGHT ALIGNMENT IN NV BAR ---------------------- -->
+        <div class="right-nav">
+            <button class="icon-search" aria-label="Search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                  </svg>
+            </button>
+
+            <a href="/kids">children</a>
+
+            <button class="icon-bell" aria-label="Notification">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+                    <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901"/>
+                  </svg>
+            </button>
+
+            <div class="profile">
+                <img src="user.png" alt="User Profile" class="profile-pic">
+                <div class="dropdown">
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Account</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li class="separator"></li>
+                        <li><a href="#">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
